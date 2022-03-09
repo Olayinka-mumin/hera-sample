@@ -1,0 +1,47 @@
+.wrap {
+  background: #F7F9FA;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  padding-top: 20px;
+  overflow: scroll;
+}
+.inner-box {
+  width: 80%;
+  max-width: 350px;
+  background: #ffffff;
+  box-shadow: 0 30px 80px #f2f2f2, 0 20px 70px #f3f3f3;
+  padding: 20px;
+  border-radius: 6px;
+  position: relative;
+  height: fit-content;
+}
+.title {
+  color: #184859;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+.detail-txt {
+  color: #184859;
+  font-size: 15px;
+  margin: 0;
+}
+.input-wrap {
+  margin-bottom: 0px;
+}
+.btn-wrap {
+  margin: 15px 0;
+}
+.agree-wrap {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.agree-txt {
+  font-size: 13px;
+  margin-right: 10px;
+}

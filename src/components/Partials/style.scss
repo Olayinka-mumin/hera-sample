@@ -1,0 +1,94 @@
+.custom-btn {
+  background: rgba(49, 83, 80, 0.9);
+  width: 100%;
+  border-radius: 6px;
+  height: 45px;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
+  transition: 0.3s;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+.custom-btn.disabled {
+  cursor: not-allowed;
+}
+.custom-btn.loading {
+  cursor: wait !important;
+}
+
+.label {
+  font-size: 14px;
+  color: #184859;
+  margin: 0 0 6px 0;
+}
+.input {
+  background: rgba(242, 245, 248, 0.36);
+  border: 1px solid rgba(119, 134, 158, 0.297312);
+  box-sizing: border-box;
+  border-radius: 6px;
+  height: 45px;
+  padding: 0 14px;
+  font-size: 15px;
+  color: #184859;
+  width: 100%;
+}
+.errorTxt {
+  font-size: 12px;
+  margin: 0 0 5px 0;
+  color: #ff4f58;
+}
+// Header
+.head-wrap {
+  background: #ffffff;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.logo-wrap {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  height: 35px;
+  width: 35px;
+  margin-right: 5px;
+}
+.name {
+  margin: 0;
+  font-size: 15px;
+  color: #184859;
+  font-weight: bold;
+}
+.user-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EBF7FB;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+}
+.logo-txt {
+  color: #184859;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+}
+.menu-icon {
+  color: #0A78A1;
+  font-size: 15px;
+  display: none;
+  transition: 0.3s;
+  @media screen and (max-width: 767px) {
+    display: inline;
+    margin-right: 10px;
+  }
+}

@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Switch, useHistory } from 'react-router-dom';
 import PublicRouteContainer from 'containers/PublicRouteContainer';
+import AuthenticatedRouteContainer from 'containers/AuthenticatedRouteContainer';
 import HomeContainer from 'containers/HomeContainer';
+import RegisterContainer from 'containers/AuthContainer/register';
 import { clearErrorsAction } from 'js/actions/errorActions';
 import { resetLoadingAction } from 'js/actions/loadingActions';
 
@@ -20,8 +22,11 @@ const RootContainer = (props) => {
   return (
     <div className="full-height">
       <Switch>
-        <PublicRouteContainer path="/">
+        <AuthenticatedRouteContainer path="/home">
           <HomeContainer />
+        </AuthenticatedRouteContainer>
+        <PublicRouteContainer path="/">
+          <RegisterContainer />
         </PublicRouteContainer>
       </Switch>
     </div>

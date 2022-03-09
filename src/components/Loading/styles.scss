@@ -1,7 +1,7 @@
 @import 'index.scss';
 
 .loading-container {
-  @extend %content-container
+  @extend %content-container;
   position: absolute;
   top: 50%;
   left: 50%;

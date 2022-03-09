@@ -11,7 +11,7 @@ const PublicRouteContainer = ({ user: { token }, children, ...props }) => (
 
       return token ? (
         <Redirect
-          to={pathname || '/'}
+          to={pathname || '/home'}
         />
       ) : children;
     }}

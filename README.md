@@ -6,7 +6,7 @@ In this repository, you'll find some setup code for a basic react project. The p
 
 There are a few key files you might want to look at to complete this project:
 
-- `src/containers/RootContainer/index.js` contains the main Switch that will decide which components to load
+- `src/containers/RootContainer/register.js` contains the main Switch that will decide which components to load
 - `src/js/middlewares/userMiddleware.js` contains a dummy `signUp` method that you'll use to simulate a network call
 - `src/js/actions/userActions.js` contains a redux action called `signUpAction` that will invoke the `signUp` middleware, as well as a brief description of what the payload should look like
 

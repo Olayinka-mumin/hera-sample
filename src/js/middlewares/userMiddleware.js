@@ -53,8 +53,6 @@ const signUp = async (action, { dispatch }) => {
 
     dispatch(setLoadingAction({ isSignUpLoading: false }));
   }, 5000);
-
-  dispatch(setLoadingAction({ isSignUpLoading: false }));
 };
 
 const logIn = async (action, { dispatch }) => {
@@ -87,23 +85,27 @@ const getUser = async (action, { dispatch, getState }) => {
   dispatch(setLoadingAction({ isGetUserLoading: true }));
   const { user: { token } } = getState();
 
-  const response = await fetch(`${API_URL}/accounts/retrieve/`, {
-    method: 'GET',
-    headers: getLoggedInHeaders(token),
-  });
+  try {
+    const response = await fetch(`${API_URL}/accounts/retrieve/`, {
+      method: 'GET',
+      headers: getLoggedInHeaders(token),
+    });
 
-  const responseJson = await response.json();
+    const responseJson = await response.json();
 
-  if (!response.ok) {
-    dispatch(receiveErrorAction({ getUserError: responseJson }));
-    dispatch(logOutAction());
-  } else {
-    const { user, token: newToken } = responseJson;
-    dispatch(clearErrorsAction());
-    dispatch(receiveUserAction({ ...user, token: newToken }));
+    if (!response.ok) {
+      dispatch(receiveErrorAction({ getUserError: responseJson }));
+      dispatch(logOutAction());
+    } else {
+      const { user, token: newToken } = responseJson;
+      dispatch(clearErrorsAction());
+      dispatch(receiveUserAction({ ...user, token: newToken }));
+    }
+
+    dispatch(setLoadingAction({ isGetUserLoading: false }));
+  } catch (e) {
+    dispatch(setLoadingAction({ isGetUserLoading: false }));
   }
-
-  dispatch(setLoadingAction({ isGetUserLoading: false }));
 };
 
 const forgotPassword = async (action, { dispatch }) => {

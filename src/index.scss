@@ -130,6 +130,11 @@ body {
   pointer-events: none;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+}
+
 h1 {
   font-size: calculateRem(50px);
 }
