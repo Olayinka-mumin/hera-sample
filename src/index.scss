@@ -210,3 +210,38 @@ a {
     height: calculateRem(60px);
   }
 }
+
+:root {
+  --primary: #657EFF;
+  --primaryDark: #657EFF;
+  --secondary: #F6A256;
+  --secondaryDark: #F6A256;
+  --plane: #FFFFFF;
+  --planeDark: #171717;
+  --background: #FFFFFF;
+  --backgroundDark: #020202;
+  --chatBoxOne: #E4E8EB;
+  --chatBoxOneDark: #3C3B3D;
+  --chatBoxTwo: #657EFF;
+  --chatBoxTwoDark: #657EFF;
+  --primaryText: #1E1E1E;
+  --primaryTextDark: #FFFFFF;
+  --secondaryText: #7A7A7A;
+  --secondaryTextDark: rgba(255,255,255,0.8);
+  --primaryTextTwo: #4558BA;
+  --primaryTextTwoDark: #4558BA;
+  --secondaryTextTwo: #BEC1D2;
+  --secondaryTextTwoDark: var(--secondaryTextDark);
+  --transparentBlue: #F2F4FF;
+  --lightBlueBorder: #ADCFFF;
+  --redBorder: #F47458;
+  --headerBackground: #F3F7FD;
+  --headerBackgroundDark: #1B1B1C;
+  --borderColor: #EDF0FF;
+  --borderColorDark: #333236;
+  --shadowColor: rgba(148, 159, 210, 0.07);
+  --defaultFont: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+  --logoFont: 'Abril Fatface', Montserrat;
+}
+
