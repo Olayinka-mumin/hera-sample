@@ -244,4 +244,9 @@ a {
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
   --logoFont: 'Abril Fatface', Montserrat;
 }
-
+@mixin shadowClassMixin () {
+  box-shadow: 0 calculateRem(4px) calculateRem(20px) rgba(0, 0, 0, 0.08);
+  @media (prefers-color-scheme: dark) {
+    box-shadow: 0 calculateRem(3.08px) calculateRem(15.4px) rgb(0 0 0 / 40%);
+  }
+}
