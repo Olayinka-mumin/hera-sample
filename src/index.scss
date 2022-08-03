@@ -250,3 +250,10 @@ a {
     box-shadow: 0 calculateRem(3.08px) calculateRem(15.4px) rgb(0 0 0 / 40%);
   }
 }
+%shadowClass {
+  box-shadow: 0 calculateRem(3.08px) calculateRem(15.4px) rgb(0 0 0 / 40%);
+}
+// Files where colors are used
+// MessageBox scss
+// TaskListTabOption
+// CardBox
